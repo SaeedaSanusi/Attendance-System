@@ -1,5 +1,4 @@
 // Remove or comment out the Image import
-// import Image from "next/image";
 import AttendanceForm from './components/AttendanceForm';
 
 export default function Home() {
