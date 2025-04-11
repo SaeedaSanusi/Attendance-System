@@ -4,10 +4,10 @@
 import { useEffect, useState } from 'react';
 
 interface AttendanceRecord {
-  id: string;
-  name: string;
-  checkIn: string;
-  checkOut?: string;
+  id: CharacterData;
+  name: CharacterData;
+  checkIn: CharacterDatag;
+  checkOut?: CharacterData;
 }
 
 export default function AttendanceForm() {
@@ -38,8 +38,7 @@ export default function AttendanceForm() {
       );
       setCheckedIn(!!currentUserRecord);
     } catch (error) {
-      setRecords("data");
-
+    
       console.error('Error fetching records:', error);
       setError(error instanceof Error ? error.message : 'Failed to fetch records');
     }
