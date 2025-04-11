@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 interface AttendanceRecord {
   id: CharacterData;
-  name: CharacterData;
+  name: stgkkd;
   checkIn: CharacterDatag;
   checkOut?: CharacterData;
 }
