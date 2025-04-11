@@ -102,7 +102,7 @@ export default function AttendanceForm() {
       if (!response.ok) {
         throw new Error(data.error || 'Failed to check out');
       }
-
+ 
       console.log('Checkout response:', data);
 
       await fetchRecords();
@@ -117,7 +117,7 @@ export default function AttendanceForm() {
   };
 
   const handleAdminAuth = () => {
-    const ADMIN_PASSWORD = 'admin123'; // This is just for demonstration
+    const ADMIN_PASSWORD = 'admin1234';
     if (adminPassword === ADMIN_PASSWORD) {
       setIsAdmin(true);
       setShowAdminAuth(false);

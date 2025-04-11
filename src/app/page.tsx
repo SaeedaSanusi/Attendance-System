@@ -1,4 +1,3 @@
-// Remove or comment out the Image import
 import AttendanceForm from './components/AttendanceForm';
 
 export default function Home() {
