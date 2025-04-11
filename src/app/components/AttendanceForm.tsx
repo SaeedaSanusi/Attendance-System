@@ -39,7 +39,7 @@ export default function AttendanceForm() {
       setCheckedIn(!!currentUserRecord);
     } catch (error) {
       setRecords("data");
-      setRecords("data");
+
       console.error('Error fetching records:', error);
       setError(error instanceof Error ? error.message : 'Failed to fetch records');
     }
